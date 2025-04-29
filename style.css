@@ -1,0 +1,45 @@
+#container {
+    display: flex;
+    justify-content: center;
+}
+#info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: center;
+}
+#playerTurn {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+#board {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: black;
+}
+.cell {
+    background-color: white;
+    cursor: pointer;
+    border-style: none;
+    border: 0px;
+    text-align: center;
+    font-size: 3rem;
+}
+.cell-empty {
+    color: hsla(0, 0%, 0%, 0%);
+}
+.cell-empty:hover {
+    color: hsla(0, 0%, 0%, 10%);
+}
+button:disabled {
+    cursor: not-allowed;
+}
+.cell-filled:disabled {
+    color: hsla(0, 0%, 0%, 100%);
+}

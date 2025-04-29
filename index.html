@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,30 @@
     <link rel="stylesheet" href="style.css">
     <title>Tic Tac Toe</title>
 </head>
-<body>
 
+<body>
+    <div id="container">
+        <div id="info">
+            <div id="message"></div>
+            <label for="player1">
+                <input value="Player 1" id="player1">
+                <div class="">
+                    Score: <span id="p1Score">0</span>
+                </div>
+            </label>
+            <label for="player2">
+                <input value="Player 2" id="player2">
+                <div class="">
+                    Score: <span id="p2Score">0</span>
+                </div>
+            </label>
+            <button id="newGame">New Game</button>
+        </div>
+        <div id="game">
+            <div id="playerTurn"></div>
+            <div id="board"></div>
+        </div>
+    </div>
 </body>
+
 </html>
